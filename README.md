@@ -41,4 +41,4 @@ Arguments to functions are passed in registers (not on the stack):
 
 ## Usage
 1. "make" command generates the libasm.a library (containing ft_strlen, ft_strcpy, ft_strcmp, ft_write, ft_read, ft_strdup functions). Note that you must have gcc and nasm installed (sudo apt install gcc && sudo apt install nasm)
-2. "make test" command compiles the libasm.a library with a file (main.c) that tests the libasm.a library. Tests are executed comparing my assembly implementation against its official counterpart. Tests output is shown in the terminal.
+2. "make test" command links and compiles the libasm.a library with a file (main.c) that tests the libasm.a library. Tests are executed comparing my assembly implementation against its official counterpart. Tests output is shown in the terminal.
