@@ -1,13 +1,11 @@
 # Libasm-Linux
 
-### CPU (Central Processor Unit) process instructions in our code. Different CPU`s process different types of instruction sets (ARM instruction set, X86, X64...). But CPU´s only understand 0's and 1's (binary code)!!!! ASM is the readable representation of the binary language that the processor understands. There's one assembly language per instruction set.
-
-This project rewrites in x86_64 ASM (in Intel syntax) six functions:
+### This project rewrites in x86_64 ASM (in Intel syntax) six functions:
 - Three from the C standard library (strlen, strcpy, strcmp)
 - Two POSIX system calls (write, read) 
 - One POSIX string function (strdup)
 
-x86_64 ASM is assembly language adapted to processors with X64 instruction set. 64-bit ASM is meant for CPU architectures with 64 bit registers (so we can address much more than 4Gb in RAM!!!!!). System V AMD64 ABI, which is the standard calling convention for 64-bit Linux and macOS systems, is used.
+CPU (Central Processor Unit) process instructions in our source code (well, only after they have been 'translated' -compiled- to machine code -binary-). Different CPU`s process different types of instruction sets (ARM instruction set, X86, X64...). But CPU´s only understand 0's and 1's (binary code)!!!! ASM is the readable representation of the binary language that the processor understands. There's one assembly language per instruction set. x86_64 ASM is assembly language adapted to processors with X64 instruction set. 64-bit ASM is meant for CPU architectures with 64 bit registers (so we can address much more than 4Gb in RAM!!!!!). System V AMD64 ABI, which is the standard calling convention for 64-bit Linux and macOS systems, is used.
 
 #### Registers in x86_64
 
