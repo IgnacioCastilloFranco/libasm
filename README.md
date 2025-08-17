@@ -5,7 +5,7 @@
 - Two POSIX system calls (write, read) 
 - One POSIX string function (strdup)
 
-CPU (Central Processor Unit) process instructions in our source code (well, only after they have been 'translated' -compiled- to machine code -binary-). Different CPU`s process different types of instruction sets (ARM instruction set, X86, X64...). But CPU´s only understand 0's and 1's (binary code)!!!! ASM is the readable representation of the binary language that the processor understands. There's one assembly language per instruction set. x86_64 ASM is assembly language adapted to processors with X64 instruction set. 64-bit ASM is meant for CPU architectures with 64 bit registers (so we can address much more than 4Gb in RAM!!!!!). System V AMD64 ABI, which is the standard calling convention for 64-bit Linux and macOS systems, is used.
+CPU (Central Processor Unit) process instructions in our source code (well, only after they have been 'translated' -compiled- to machine code -binary-). Different CPU`s process different types of instruction sets (ARM instruction set, X86, X64...). ASM is the readable representation of the binary language that the processor understands. There's one assembly language per instruction set. x86_64 ASM is assembly language adapted to processors with X64 instruction set. 64-bit ASM is meant for CPU architectures with 64 bit registers (so we can address much more than 4Gb in RAM!!!!!). System V AMD64 ABI (the standard calling convention for 64-bit Linux and macOS systems) is used.
 
 #### Registers in x86_64
 
@@ -20,9 +20,6 @@ CPU (Central Processor Unit) process instructions in our source code (well, only
 | rsp    | esp    | sp     | spl   |
 | rbp    | ebp    | bp     | bpl   |
 | r8–r15 | r8d–r15d | r8w–r15w | r8b–r15b |
-
-#### Function Calls in x86_64
-(Calling Convention = System V AMD64 ABI, which is the standard calling convention for 64-bit Linux and macOS systems.)
 
 Arguments to functions are passed in registers (not on the stack):
 
